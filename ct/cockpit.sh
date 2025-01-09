@@ -57,9 +57,9 @@ function update_script() {
 if [[ ! -d /etc/cockpit ]]; then msg_error "No ${APP} Installation Found!"; exit; fi
 UPD=$(whiptail --backtitle "Proxmox VE Helper Scripts" --title "SUPPORT" --radiolist --cancel-button Exit-Script "Spacebar = Select" 11 58 4 \
   "1" "Update LXC" ON \
-  "2" "Install cockpit-file-sharing" OFF \
-  "3" "Install cockpit-identities" OFF \
-  "4" "Install cockpit-navigator" OFF \
+  "2" "Install cockpit-file-sharing" ON \
+  "3" "Install cockpit-identities" ON \
+  "4" "Install cockpit-navigator" ON \
   3>&1 1>&2 2>&3)
 
 header_info
