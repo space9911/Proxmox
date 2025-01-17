@@ -21,7 +21,7 @@ msg_ok "Installed Dependencies"
 
 msg_info "Installing qbittorrent-nox"
 $STD apt-get install -y qbittorrent-nox
-mkdir -p /.config/qBittorrent/
+mkdir -p /.config/qBittorrent2/
 cat <<EOF >/.config/qBittorrent/qBittorrent.conf
 [Preferences]
 WebUI\Password_PBKDF2="@ByteArray(amjeuVrF3xRbgzqWQmes5A==:XK3/Ra9jUmqUc4RwzCtrhrkQIcYczBl90DJw2rT8DFVTss4nxpoRhvyxhCf87ahVE3SzD8K9lyPdpyUCfmVsUg==)"
